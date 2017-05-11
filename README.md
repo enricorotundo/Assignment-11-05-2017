@@ -1,8 +1,8 @@
-# 904Labs-Assignment
+# Assignment: Single Page TODO App
 
 Requirements:
 
-* single-page
+* single-page app
 * User login 
 * user logout
 * Adding todo items
@@ -17,8 +17,12 @@ Requirements:
 * database to store the data
 * JS frontend
 
-# Install
 
+
+# Install
+    
+    git clone https://github.com/tundo91/Assignment-11-05-2017.git
+    cd Assignment-11-05-2017
     mkdir venv
     pip install -r requirements.txt
 
@@ -29,7 +33,7 @@ Requirements:
 
 # Install Frontend
 
-https://github.com/angular/angular-seed
+[Reference](https://github.com/angular/angular-seed)
 
     cd static
     sudo npm install -g http-server
@@ -38,3 +42,11 @@ https://github.com/angular/angular-seed
 # Run frontend
     
     npm start
+
+
+# Description
+
+Pages are served on [127.0.0.1:8000/](127.0.0.1:8000/).
+Both Django and Angular. 
+Backend has a couple of APIs available http://localhost:8080.
+Angualr tries to call the backend static/app/view1/view1.js but it's not working.
