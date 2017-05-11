@@ -1,5 +1,13 @@
 # Assignment: Single Page TODO App
 
+# Description
+
+Pages are served on [127.0.0.1:8000/](127.0.0.1:8000/).
+Both Django and Angular. 
+Backend has a couple of APIs available http://localhost:8080.
+Angualr tries to call the backend static/app/view1/view1.js but it's not working.
+
+
 Requirements:
 
 * single-page app
@@ -43,10 +51,3 @@ Requirements:
     
     npm start
 
-
-# Description
-
-Pages are served on [127.0.0.1:8000/](127.0.0.1:8000/).
-Both Django and Angular. 
-Backend has a couple of APIs available http://localhost:8080.
-Angualr tries to call the backend static/app/view1/view1.js but it's not working.
