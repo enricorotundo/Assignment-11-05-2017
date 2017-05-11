@@ -32,6 +32,8 @@ Requirements:
     git clone https://github.com/tundo91/Assignment-11-05-2017.git
     cd Assignment-11-05-2017
     mkdir venv
+    virtualenv venv
+    source venv/bin/activate
     pip install -r requirements.txt
 
 # Run backend
@@ -45,7 +47,6 @@ Requirements:
 
     cd static
     sudo npm install -g http-server
-    http-server -a localhost -p 8001
 
 # Run frontend
     
