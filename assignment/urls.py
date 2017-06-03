@@ -18,19 +18,15 @@ from django.conf.urls import url, include
 from django.conf.urls.static import static
 from rest_framework.urlpatterns import format_suffix_patterns
 
-from rest_framework import routers
 from single_page_todo import views
 
-#router = routers.DefaultRouter()
-#router.register(r'users', views.UserViewSet)
-#router.register(r'todos', views.TodoViewSet)
+
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    #url(r'^', include(router.urls)),
-    url(r'^todos/', views.TodoList.as_view()),
-    url(r'^todos/(?P<pk>[0-9]+)/$', views.TodoDetail.as_view()),
+    url(r'^todos/$', views.TodoList.as_view()),
+    url(r'^todos/(?P<pk>[0-9]+)$', views.TodoDetail.as_view()),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
