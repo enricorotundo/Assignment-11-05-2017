@@ -10,4 +10,4 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class TodoSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Todo
-        fields = ('id', 'owner', 'status', 'due_date')
+        fields = ('id', 'owner', 'status', 'due_date', 'description')

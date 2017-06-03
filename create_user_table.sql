@@ -12,5 +12,6 @@ CREATE TABLE Todo
     owner INT NOT NULL,
     status VARCHAR(10) NOT NULL,
     due_date DATE,
+    description VARCHAR(1000),
     CONSTRAINT owner FOREIGN KEY (id) REFERENCES User (id)
 );

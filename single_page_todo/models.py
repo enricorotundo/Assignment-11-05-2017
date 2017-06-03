@@ -14,12 +14,12 @@ class User(models.Model):
 
 
 
-
 class Todo(models.Model):
     id = models.IntegerField(blank=True, primary_key=True)
     owner = models.IntegerField()
     status = models.CharField(max_length=10)
     due_date = models.DateField(blank=True, null=True)
+    description = models.CharField(max_length=1000)
 
     class Meta:
         managed = False
