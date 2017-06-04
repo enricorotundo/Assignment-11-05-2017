@@ -2,10 +2,12 @@
 
 This app is deployed on [https://agile-thicket-76618.herokuapp.com/static/app/index.html#/](https://agile-thicket-76618.herokuapp.com/static/app/index.html#/) (be patient, loading might take a while).
 
+API is on [https://agile-thicket-76618.herokuapp.com/](https://agile-thicket-76618.herokuapp.com/)
+
 ## Description
 
  
-
+![Image of Yaktocat](items_list.png)
 
 ## Requirements:
 
