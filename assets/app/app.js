@@ -40,6 +40,12 @@ var app = angular.module('myApp', [
                     headers: {
                         'Content-Type':'application/json'
                     }
+                },
+                'delete': {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type':'application/json'
+                    }
                 }
             },
             {

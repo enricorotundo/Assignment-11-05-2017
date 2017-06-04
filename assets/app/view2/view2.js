@@ -11,11 +11,18 @@ app
   });
 
     $scope.submitTODO = function () {
-
-               console.log(todo);
-
+        console.log(todo);
         todos.update({ id: id }, todo)
+    };
 
+    $scope.deleteTODO = function () {
+        console.log(todo);
+        todos.delete({ id: id },
+            function (successResult) {
+                $state.go('view1', {}, {reload: true});
+        }, function (errorResult) {
+
+            });
     };
 
 }]);
