@@ -15,7 +15,10 @@ app
 
     $scope.submitTODO = function () {
         console.log(todo);
-        todos.update({ id: id }, todo)
+        todos.update({ id: id }, todo).then(function () {
+            alert("done");
+        })
+
     };
 
     $scope.deleteTODO = function () {
