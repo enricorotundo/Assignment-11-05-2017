@@ -14,6 +14,7 @@ class User(models.Model):
 
 
 class Todo(models.Model):
+    """ This model represents a TODO item """
     id = models.IntegerField(blank=True, primary_key=True)
     owner = models.IntegerField()
     status = models.CharField(max_length=10)
