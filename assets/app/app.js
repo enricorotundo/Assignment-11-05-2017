@@ -31,7 +31,8 @@ var app = angular.module('myApp', [
 }])
 .factory('todos', function($resource) {
         return $resource(
-            'http://localhost:8000/todos/:id/',
+            'https://agile-thicket-76618.herokuapp.com/todos/:id/',
+            //'http://localhost:8000/todos/:id/',
             {},
             {
                 'query': {
