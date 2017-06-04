@@ -1,29 +1,30 @@
-# Assignment: Single Page TODOs List
+# Single Page TODOs List
+
+This app is deployed on [https://agile-thicket-76618.herokuapp.com/static/app/index.html#/](https://agile-thicket-76618.herokuapp.com/static/app/index.html#/) (be patient, loading might take a while).
 
 ## Description
 
-App is available on [HERE](https://agile-thicket-76618.herokuapp.com/static/app/index.html#/). 
+ 
 
 
 ## Requirements:
 
+- [x] Python backend (Django + RESTframework)
+- [x] single-page JS frontend (AngularJS)
+- [x] Database to store the data (SQLite)
 - [ ] User login 
 - [ ] User logout
 - [x] Listing active/done TODO items
 - [x] Adding TODO items
 - [x] Editing TODO items
 - [x] Deleting TODO items
-- [x] Checking out TODO items
+- [x] Checking out TODO items (flagging an item as done?)
 - [ ] TODO listing supports sorting by due date (ascending/descending)
-- [x] TODO has a description
-- [x] TODO has a due date, where dates are timezone aware
-- [x] Database to store the data (SQLite)
-- [x] Python backend (Django+RESTframework)
-- [x] JS frontend (AngularJS)
-- [x] single-page app
+- [x] a TODO has a description
+- [x] a TODO has a due date, where dates are timezone aware
 
 
-## Install
+## Local install
     
     git clone https://github.com/tundo91/Assignment-11-05-2017.git
     cd Assignment-11-05-2017
