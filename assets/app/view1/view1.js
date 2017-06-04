@@ -1,14 +1,11 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
+app
 
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {
-    templateUrl: 'view1/view1.html',
-    controller: 'View1Ctrl'
-  });
-}])
-
-.controller('View1Ctrl', [function() {
+.controller('View1Ctrl', ['$scope', 'todos', '$stateParams', '$state', function($scope, todos, $stateParams, $state) {
+  todos.query().$promise.then(function(data) {
+        $scope.todos = data;
+        console.log(data);
+    });
 
 }]);

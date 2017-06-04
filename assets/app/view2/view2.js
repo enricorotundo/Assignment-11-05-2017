@@ -1,14 +1,21 @@
 'use strict';
 
-angular.module('myApp.view2', ['ngRoute'])
+app
 
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view2', {
-    templateUrl: 'view2/view2.html',
-    controller: 'View2Ctrl'
+.controller('View2Ctrl', ['$scope', 'todos', '$stateParams', '$state', function($scope, todos, $stateParams, $state) {
+
+    var id = $stateParams.id
+
+  var todo = todos.get({ id: id }, function(data) {
+    $scope.todo = data;
   });
-}])
 
-.controller('View2Ctrl', [function() {
+    $scope.submitTODO = function () {
+
+               console.log(todo);
+
+        todos.update({ id: id }, todo)
+
+    };
 
 }]);
