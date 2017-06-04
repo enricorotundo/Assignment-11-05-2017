@@ -9,14 +9,14 @@ Pages are served on [127.0.0.1:8000/](127.0.0.1:8000/).
 
 - [ ] User login 
 - [ ] User logout
-- [ ] Listing active/done TODO items
-- [ ] Adding TODO items
+- [x] Listing active/done TODO items
+- [x] Adding TODO items
 - [x] Editing TODO items
 - [x] Deleting TODO items
 - [x] Checking out TODO items
 - [ ] TODO listing supports sorting by due date (ascending/descending)
 - [x] TODO has a description
-- [ ] TODO has a due date, where dates are timezone aware
+- [x] TODO has a due date, where dates are timezone aware
 - [x] Database to store the data (SQLite)
 - [x] Python backend (Django+RESTframework)
 - [x] JS frontend (AngularJS)

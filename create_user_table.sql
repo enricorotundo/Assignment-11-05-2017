@@ -11,7 +11,7 @@ CREATE TABLE Todo
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     owner INT NOT NULL,
     status VARCHAR(10) NOT NULL,
-    due_date DATE,
+    due_date DATETIME,
     description VARCHAR(1000),
     CONSTRAINT owner FOREIGN KEY (id) REFERENCES User (id)
 );

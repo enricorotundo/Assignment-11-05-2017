@@ -4,7 +4,8 @@
 // Declare app level module which depends on views, and components
 var app = angular.module('myApp', [
     'ngResource',
-    'ui.router'
+    'ui.router',
+    '720kb.datepicker'
 ])
 .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 
@@ -19,6 +20,11 @@ var app = angular.module('myApp', [
             url: '/todos/?id',
             templateUrl: 'view2/view2.html',
             controller: 'View2Ctrl'
+        }).state({
+            name: 'view3',
+            url: '/todos/add/',
+            templateUrl: 'view3/view3.html',
+            controller: 'View3Ctrl'
         });
 
   $urlRouterProvider.otherwise('/todos/');
@@ -31,6 +37,12 @@ var app = angular.module('myApp', [
                 'query': {
                     method: 'GET',
                     isArray: false,
+                    headers: {
+                        'Content-Type':'application/json'
+                    }
+                },
+                'create': {
+                    method: 'POST',
                     headers: {
                         'Content-Type':'application/json'
                     }
