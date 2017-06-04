@@ -4,6 +4,7 @@ django-angular==0.8.4
 django-angular-scaffold==0.12.1
 django-cors-headers==2.1.0
 djangorestframework==3.6.2
+gunicorn==19.7.1
 Markdown==2.6.8
 packaging==16.8
 pyparsing==2.2.0
