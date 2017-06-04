@@ -1,6 +1,8 @@
 appdirs==1.4.3
 Django==1.11.1
-django-cors-headers==2.0.2
+django-angular==0.8.4
+django-angular-scaffold==0.12.1
+django-cors-headers==2.1.0
 djangorestframework==3.6.2
 Markdown==2.6.8
 packaging==16.8
