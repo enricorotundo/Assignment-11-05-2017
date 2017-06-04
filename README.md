@@ -2,7 +2,7 @@
 
 ## Description
 
-Pages are served on [127.0.0.1:8000/](127.0.0.1:8000/). 
+App is available on [HERE](https://agile-thicket-76618.herokuapp.com/static/app/index.html#/). 
 
 
 ## Requirements:
