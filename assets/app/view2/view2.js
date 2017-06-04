@@ -3,7 +3,6 @@
 app
 
 .controller('View2Ctrl', ['$scope', 'todos', '$stateParams', '$state', function($scope, todos, $stateParams, $state) {
-
     console.log($state.params);
     console.log($stateParams);
 
@@ -15,10 +14,7 @@ app
 
     $scope.submitTODO = function () {
         console.log(todo);
-        todos.update({ id: id }, todo).then(function () {
-            alert("done");
-        })
-
+        todos.update({ id: id }, todo);
     };
 
     $scope.deleteTODO = function () {
